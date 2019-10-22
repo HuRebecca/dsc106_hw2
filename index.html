@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rebecca Hu's Homework 2: McDonalds Analysis</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="pictures/sign.jpg" class="profile-img">
+            <nav>
+                <ul>
+                    <li><a href="#section1">Welcome</a></li>
+                    <li><a href="#section2">Line Chart</a></li>
+                    <li><a href="#section3">Bar Chart</a></li>
+                    <li><a href="#section4">Pie Chart</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="section1">
+                <div class="section-inner">
+                    <img src="pictures/sign.jpg" class="profile-img">
+                    <h1>DSC 106 Homework 2</h1>
+                    <h2>Rebecca Hu (A13999923)</h2>
+                    <a href="CEO_PDF.pdf" download="ceo.pdf">Click Here to Download PDF</a>
+                </div>
+            </section>
+            <section id="section2">
+                <div class='tableauPlaceholder' id='viz1571512047502' style='width: 800px; height: 1000px;' > <!---style='position: relative'-->
+                    <noscript>
+                        <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ds&#47;dsc106_hw2&#47;TotalSalesOverTime&#47;1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='dsc106_hw2&#47;TotalSalesOverTime' />
+                        <param name='tabs' value='yes' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ds&#47;dsc106_hw2&#47;TotalSalesOverTime&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                    </object>
+                </div>   
+                <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1571512047502');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>
+            </section>
+            <section id='section2'>
+                <p><b>(Click through the tabs!)</b> In the <b><i>Total Sales Over Time</i></b> tab, we can see a gradual
+                        increase from the start of the data (Janurary 2016) to the end of 2018. 
+                        This change is most obvious in the hamburger sales data, but we still
+                        are unable to know exactly when the steepest change occurs. Click the
+                        <b><i>Total Normalized Sales Over Time</i></b> to view a standardized 
+                        version of the same graph. Here, when the sales of hamburgers, chicken fillets, 
+                        and fish fillets are each normalized, it becomes clear that a dramatic dip
+                        in sales occurs in October 2018. This corresponds to the timing of Burger King
+                        releasing their Impossible Whopper.
+                </p>
+            </section>
+
+            <section id="section3">
+                <div class='tableauPlaceholder' id='viz1571673961146' style='width: 900px; height: 1500px;' >
+                    <noscript>
+                        <a href='#'>
+                            <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;av&#47;average_sales&#47;AverageFoodSalesbyDayofWeek&#47;1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='average_sales&#47;AverageFoodSalesbyDayofWeek' />
+                        <param name='tabs' value='yes' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;av&#47;average_sales&#47;AverageFoodSalesbyDayofWeek&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='filter' value='publish=yes' />
+                    </object>
+                </div>                
+                <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1571673961146');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                vizElement.style.width='100%';
+                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>      
+            </section>
+            <section id='section3'>
+                <p><b>(Click through the tabs!)</b> In the <b><i>Average Food Sales by Day of Week</i></b> tab, we can see that the average sales from each weekday do not
+                    differ dramatically. It was imortant that we took the <i>average</i> sales instead of the <i>total</i> sales because this data
+                    was taken from the month January 2016, which had one additional Friday, Saturday, and Sunday than every other day of the week. 
+                    So if we tried to visualize total sales per week day, it would look as if sales increased on the weekend, when the data does not 
+                    really suggest that. Click the <b><i>Average Sales for Each Food by Day of Week</i></b> to view the average sales for each individual
+                    food. From this chart we can see that the ratio of sales between each food item remains fairly consistent throughout the week.
+                    Hamburgers continually outsell chicken and fish fillets. While the sales for hamburgers and chicken fillets seems to only vary, at most, 
+                    by a couple thousand each day, the sales of fish fillets seem to peak on Fridays and dip back down on Saturdays and Sundays. This could 
+                    be explained by the reason behind the creation of the fish fillet in 1960, when the sandwich was added for customers who do not eat 
+                    non-seafood meat on Fridays when observing Lent. Some Catholics observe this tradition on every Friday of the year. Additionally, during
+                    2016, McDonalds had a Fish Fillet Friday promotion where the sandwiches were discounted on Fridays. This could also help explain Friday being
+                    the most popular day for fish fillet sandwiches. 
+                </p>
+            </section>
+            <section id="section4">
+                <div class='tableauPlaceholder' id='viz1571700782717' style='width: 900px; height: 1500px;'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;od&#47;oddfishfillets&#47;Sheet1&#47;1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='oddfishfillets&#47;Sheet1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;od&#47;oddfishfillets&#47;Sheet1&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                    </object></div>                
+                    <script type='text/javascript'>                    
+                    var divElement = document.getElementById('viz1571700782717');                    
+                    var vizElement = divElement.getElementsByTagName('object')[0];                    
+                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+                    var scriptElement = document.createElement('script');                    
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                    </script>
+            </section>
+            <section id='section4'>
+                <p>
+                    Something odd happens when we take a look at the fish fillet sales by day of the week in each region. On Thursdays and Sundays, 
+                    the Northeastern Fish Fillet Sales increase sharply. This is significant because the other regions peak on Fridays and steeply
+                    fall every other day of the week, whereas the Northeastern region's fish fillet sales sharply increase on Thursdays and Sundays,
+                    but fall dramatically every other day of the week including Fridays.
+                </p>
+            </section>
+            <section id="section5">
+                    <div class='tableauPlaceholder' id='viz1571704416959' style='width: 900px; height: 1500px;'>
+                        <noscript><a href='#'>
+                            <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;du&#47;dumbpie&#47;Jan2016&#47;1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='dumbpie&#47;Jan2016' />
+                        <param name='tabs' value='yes' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;du&#47;dumbpie&#47;Jan2016&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='filter' value='publish=yes' />
+                    </object>
+                </div>                
+                <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1571704416959');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>
+                </section>
+                <section id='section5'>
+                    <p>
+                        (Click through the tabs!) This chart just visualizes the comparison of each individual food item's sales from January 2016 (The start of the data)
+                        to September 2019 (The end of the data). We can see that not much changes. Hamburgers maintain their position as the most
+                        popular food item, and chicken and fish fillets are the next most popular, respectively. 
+                    </p>
+                </section>
+        </main>
+        <footer>
+            © Copyright Rebecca Hu, 2019
+        </footer>
+    </body>
+</html>
+
+
+
+
